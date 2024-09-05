@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "install-diff": "./index.js"
+    "install-diff": "index.js"
   },
   "scripts": {
     "start": "node .",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sonicradish/install-diff.git"
+    "url": "git+https://github.com/sonicradish/install-diff.git"
   },
   "bugs": {
     "url": "https://github.com/sonicradish/install-diff/issues"
