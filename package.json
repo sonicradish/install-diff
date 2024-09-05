@@ -1,0 +1,45 @@
+{
+  "name": "install-diff",
+  "version": "1.0.0",
+  "description": "A tool to compare installed, installable, and latest versions of npm packages",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "install-diff": "./index.js"
+  },
+  "scripts": {
+    "start": "node .",
+    "prepublishOnly": "npm run test",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "diff",
+    "ci",
+    "install",
+    "install-diff",
+    "lockfile",
+    "packagejson",
+    "package",
+    "packagelock",
+    "packagelockjson"
+  ],
+  "author": "https://github.com/sonicradish",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonicradish/install-diff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonicradish/install-diff/issues"
+  },
+  "homepage": "https://github.com/sonicradish/install-diff#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "semver": "^7.6.3",
+    "yocto-spinner": "^0.1.0"
+  }
+}
