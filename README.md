@@ -18,5 +18,9 @@ Options:
 ### Example
 
 ```bash
-npx install-diff -d <directory>
+npx install-diff -ad .
 ```
+
+### Output
+
+![Example Output](docs/example.png)

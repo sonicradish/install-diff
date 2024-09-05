@@ -1,6 +1,6 @@
 {
   "name": "install-diff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to compare installed, installable, and latest versions of npm packages",
   "main": "index.js",
   "type": "module",
