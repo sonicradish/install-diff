@@ -206,9 +206,13 @@ const compareVersions = async () => {
           coloredInstalledVersion = chalk.yellow(installedVersion);
         }
 
-        coloredInstallableVersion = `${chalk.yellow(
-          installableVersion
-        )}${coloredInstallableVersionRange}`;
+        coloredInstallableVersion = hasInstalledChanged
+          ? `${chalk.yellow(
+              installableVersion
+            )}${coloredInstallableVersionRange}`
+          : `${chalk.green(
+              installableVersion
+            )}${coloredInstallableVersionRange}`;
         coloredLatestVersion += diffAnnotation;
       } else if (hasInstalledChanged) {
         const diff = semver.diff(installedVersion, installableVersion);
